@@ -4,100 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hamzakhokhar.colorblender.MainActivity">
+    tools:context="com.example.ceocarlallen.wordcorrecter.MainActivity">
 
-    <SurfaceView
-        android:id="@+id/surfaceView"
-        android:layout_width="278dp"
-        android:layout_height="230dp"
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.ceocarlallen.wordcorrecter.ToolbarFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019" />
+        tools:layout="@layout/toolbar_fragment" />
 
-    <Button
-        android:id="@+id/colgitorA"
+    <fragment
+        android:id="@+id/text_fragment"
+        android:name="com.example.ceocarlallen.wordcorrecter.TextFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
-        android:text="Color A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/surfaceView"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="firstColor"/>
-
-    <Button
-        android:id="@+id/colorB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:text="Color B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/surfaceView"
-        app:layout_constraintTop_toBottomOf="@+id/colorA"
-        android:onClick="secondColor"/>
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="376dp"
-        android:layout_height="33dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/surfaceView"
-        app:layout_constraintVertical_bias="0.242" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="284dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Blend Color A and B"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/seekBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/surfaceView"
-        app:layout_constraintVertical_bias="1.0"
-        android:textAlignment="center"/>
-
-    <TextView
-        android:id="@+id/textcolor"
-        android:layout_width="381dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="thirdColor"
-        android:text="Click to change Text color"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        app:layout_constraintVertical_bias="0.178"
-        android:textAlignment="center"/>
+        app:layout_constraintTop_toBottomOf="@+id/fragment"
+        tools:layout="@layout/text_fragment" />
 
 </android.support.constraint.ConstraintLayout>

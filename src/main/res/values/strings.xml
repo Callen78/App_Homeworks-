@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">ColorBlender</string>
+    <string name="app_name">WordCorrecter</string>
+    <string name="change_text">Change Text</string>
+    <string name="fragment_two">fragment Two</string>
 </resources>
