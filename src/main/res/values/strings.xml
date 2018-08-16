@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">WordCorrecter</string>
-    <string name="change_text">Change Text</string>
-    <string name="fragment_two">fragment Two</string>
+    <string name="app_name">NewColorPicker</string>
+    <string name="action_settings">Settings</string>
+    <string name="Save">Save</string>
+
 </resources>
